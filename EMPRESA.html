@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNpizza - lucas nolacio</title>  
+
+    <!--INICIO CSS GALERIA MAYKONSILVEIRA.COM.BR-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+
+    <link rel="shortcut icon" href="IMG/msFavicon.png" type="image/x-icon">
+    <!--INICIO CSS ICONES MAYKONSILVEIRA.COM.BR-->
+     <link rel="stylesheet" href=" https://api-icons.icons8.com/publicApi/icons/icon?id=9671&token=YOUR_API_KEY">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--INICIO CSS SLIDE MAYKONSILVEIRA.COM.BR-->
+    <link rel="stylesheet" href="pizza.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="responsivo.css">
+    <style>
+  @media(max-width: 667px) {
+    .top-do-site .icons #menu {
+        display: inline-block;
+        
+    }
+
+    .top-do-site .menu-site {
+    
+        position: absolute;
+        right: -100%;
+        transition: right 0.2s linear;
+    }
+
+    .top-do-site .menu-site.active {
+        right: 2rem;
+    }
+
+    .top-do-site .menu-site a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        
+    }
+}
+@media(max-width: 1100px){
+
+    .top-do-site .icons #menu {
+        display: inline-block;
+        
+    }
+
+    html{
+        font-size:55%
+     }
+     section{
+        padding: 2rem;
+     }
+
+     .top-do-site .menu-site {
+    
+      display: none;
+    }
+}
+    .nlflix-destaque .slide .content h3{
+    font-size: 4rem;
+}
+   
+@media(max-width: 450px){
+
+    html{
+        font-size: 50%;
+    
+    }
+     
+    .nlflix-destaque .slide .content h3{
+        font-size: 3.5rem;
+    }
+
+
+
+    .top-do-site .menu-site a {
+        color: black;
+        border-bottom: 1px solid black;
+        
+    }
+
+    .top-do-site .menu-site a {
+        color: black;
+        border-bottom: 1px solid black;
+        border-bottom-style: dotted;
+    }
+}
+
+    </style>
+
+   
+    </head>
+<body>
+    
+    <!--INCIO DO CABEÇALHO DO SITE LUCAS NOLACIO-->
+     <header class="top-do-site">
+        <!--INICIO DA LOGO DO SITE-->
+        <a href="index.html" class="logo" style="    text-shadow: 0 0 1rem #130f40;">
+            <i class="fas fa-pizza-slice"></i>
+            LnPizza
+        </a>
+        <!--FIM DA LOGO DO SITE-->
+        <nav class="menu-site" id="meu-menu" style="text-shadow: 0 0 1rem #130f40;">
+            <a href="index.html">INICIO</a>
+            <a href="EMPRESA.html">EMPRESA</a>
+            <a href="MENU.html">CARDAPIO</a>
+            <a href="pedido.html">MONTAR PEDIDO</a>
+            <a href="BLOG.html">BLOG</a> 
+            <a href="CONTATOS.html">FALE CONOSCO</a> 
+        </nav>
+        <!--INICIO DO MENU DO SITE-->
+
+        <!--INCIO DOS INCONES-->        
+            <div class="icons"  style="    text-shadow: 0 0 1rem #130f40;">
+            <div id="cart" class="fa fa-shopping-cart"></div>
+            <div id="login" class="fa fa-user"></div>
+            <div id="menu" class="fa fa-bars"></div>
+            </div>
+            
+    
+
+        <!--INCIO CARRINHO DE COMPRAS-->
+            <div class="carrinho">
+        <!--INCIO DO CARRINHOS DE COMPRAS-->
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="IMG/carrinho/carrinho-1.png" alt="">
+                <div class="content">
+                    <h3>Pizza Frango</h3>
+                    <span class="quantidade">1</span>
+                    <span class="multiplica">x</span>
+                    <span class="valor"> R$ 77,77</span>
+                </div>
+
+            </div>
+
+        <!--FIM DO CARRINHOS DE COMPRAS-->
+
+          <!--INCIO DO CARRINHOS DE COMPRAS-->
+          <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="IMG/carrinho/carrinho-2.png" alt="">
+            <div class="content">
+                <h3>Pizza Frango</h3>
+                <span class="quantidade">1</span>
+                <span class="multiplica">x</span>
+                <span class="valor"> R$ 77,77</span>
+            </div>
+
+        </div>
+
+        <!--FIM DO CARRINHOS DE COMPRAS-->
+
+        <!--INCIO DO CARRINHOS DE COMPRAS-->
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="IMG/carrinho/carrinho-3.png" alt="">
+            <div class="content">
+                <h3>Pizza Frango</h3>
+                <span class="quantidade">1</span>
+                <span class="multiplica">x</span>
+                <span class="valor"> R$ 77,77</span>
+            </div>
+
+        </div>
+
+        <!--FIM DO CARRINHOS DE COMPRAS-->
+        <h3 class="total">Total: R$ 777,77</h3>
+        <a href="" class="btn">Ir para o carrinho</a>
+                </div>
+        
+            <!--FIM CARRINHO DE COMPRAS-->
+
+        <!-- INCIO FORM LOGIN TOPO -->
+         <form action="" method="post" class="login-form">
+            <h3>Acesse sua conta</h3>
+            <input type="email" name="" id="" class="box" placeholder="Seu E-mail">
+            <input type="password" name="" id="" class="box" placeholder="Sua Senha">
+            <div class="lembra-senha">
+                <input type="checkbox" name="" id="relembrar">
+                 <label for="relembrar">Me lembra da senha</label>
+            </div>
+            <button type="submit" name="sedLogin" class="btn">Acessar</button>
+         </form>
+
+        <!-- FIM FORM LOGIN TOPO -->
+   
+    </header>
+
+
+    <!----------------------------------------------------->
+    
+    <!--INICIO TOPO DA PAGINA - LUCAS NOLACIO-->
+
+    <div class="topo-pagina">
+        <h1>Sobre Nos</h1>
+        <p><a href="index.html" title="Sobre Nos">Inicio>></a> Empresa</p>
+    </div>
+
+    <!--FIM DO TOPO DA PAGINA - LUCAS NOLACIO-->
+
+    <!------------------------------------------------------>
+
+
+    <!--FIM INCIO DO CABEÇALHO DO SITE LUCAS NOLACIO-->
+    
+
+    <!--INCIA SLIDE DESTAQUE - SITE CRIADO POR LUCAS NOLACIO-->
+
+
+
+    <!--FIM DESTAQUE SLIDE DESTAQUE - SITE CRIADO POR LUCAS NOLACIO-->
+
+
+    <!-------------------------------------------------->
+
+    
+
+            <!--DFIM ITEM DESTAQUE-->
+
+       
+    <!--FIM DESTAQUE DO SITE LUCAS NOLACIO-->
+
+    <!-------------------------------------------------------->
+
+
+    <!--INCIO COMO FUNCIONA O SITE - LUCAS NOLACIO -->
+
+    <div class="como-funciona">
+        <h1 class="titulo">Como <span>Funciona</span></h1>
+        <div class="box-container">
+
+        <!--INICIO ITEM COMO FUNCIONA-->
+        <div class="box">
+            <img src="IMG/como-funciona/msflix-1.gif" alt="">
+            <h3>Escolha Sua Pizza</h3>
+        </div>
+        <!--FIM COMO FUNCIONA ITEM COMO FUNCIONA-->
+
+        <!--INICIO ITEM COMO FUNCIONA-->
+        <div class="box">
+            <img src="IMG/como-funciona/msflix-2.gif" alt="">
+            <h3>Entrega Gratuita E Rápida</h3>
+        </div>
+        <!--FIM COMO FUNCIONA ITEM COMO FUNCIONA-->
+
+        <!--INICIO ITEM COMO FUNCIONA-->
+        <div class="box">
+            <img src="IMG/como-funciona/msflix-3.gif" alt="">
+            <h3>Métodos De Pagamentos Fáceis</h3>
+        </div>
+        <!--FIM COMO FUNCIONA ITEM COMO FUNCIONA-->
+
+        <!--INICIO ITEM COMO FUNCIONA-->
+        <div class="box">
+            <img src="IMG/como-funciona/msflix-4.gif" alt="">
+            <h3>E Finalmente, Aproveite Sua Comida</h3>
+        </div>
+        <!--FIM COMO FUNCIONA ITEM COMO FUNCIONA-->
+    
+
+        </div>
+    </div>
+
+    <!--INCIO COMO FUNCIONA O SITE - LUCAS NOLACIO -->
+
+
+    <!---------------------------------------------->
+
+
+
+    <!---------------------------------------------------------->
+
+    <!--INCIO SOBRE A EMPRESA-->
+
+    <section class="empresa">
+        <div class="row">
+            <div class="empresa-img">
+                <img src="IMG/empresa.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>A Pizzaria LnPizza: <span>O Sabor Que Combina</span> Com Sua Diversão</h3>
+                <p>
+                    Se Você É Um Amante De Pizza E De Entretenimento, A Pizzaria LnPizza É O Lugar Perfeito Para Satisfazer Seus Desejos Gastronômicos Enquanto Desfruta De Uma Experiência Única. Localizada No Coração Da Cidade, A Msflix Se Destaca Como Um Ponto De Encontro Popular Para Aqueles Que Buscam Uma Combinação Perfeita De Sabor E Diversão.
+                </p>
+                <p>
+                    O Cardápio Da Pizzaria LnPizza Oferece Uma Ampla Variedade De Opções De Pizza, Desde As Tradicionais Margheritas Até Criações Inovadoras Que Deixarão Seu Paladar Encantado. Se Você É Fã De Queijo, Peperoni, Cogumelos Ou Uma Combinação De Ingredientes Especiais, A LnPizza Tem A Pizza Perfeita Para Você. E O Melhor De Tudo, Você Pode Personalizá-La De Acordo Com Suas Preferências.
+                </p>
+                <a href="" class="btn">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!--FIM SOBRE A EMPRESA-->
+
+    <!--FIM LOJA VIRTUAL - LUCAS NOLACIO -->
+    
+    <!--------------------------------------------------->
+
+
+    <!--INICIO GALERIA DE FOTOS - LUCAS NOLACIO-->
+
+    
+    <section class="galeria-fotos" id="galeria">
+        <!--INICIO ITEM GALERIA DE FOTOS -->
+        
+            <a href="IMG/galeria/galeria1.jpg" class="box">
+                <img src="IMG/galeria/galeria1.jpg" alt="Galeria 1">
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+        
+        <!--FIM ITEM GALERIA DE FOTOS-->
+    
+        <!--INICIO ITEM GALERIA DE FOTOS -->
+        <a href="IMG/galeria/galeria2.jpg" class="box">
+            <img src="IMG/galeria/galeria2.jpg" alt="Galeria 2">
+            <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <!--FIM ITEM GALERIA DE FOTOS-->
+    
+        <!--INICIO ITEM GALERIA DE FOTOS -->
+        <a href="IMG/galeria/galeria3.jpg" class="box">
+            <img src="IMG/galeria/galeria3.jpg" alt="Galeria 3">
+            <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <!--FIM ITEM GALERIA DE FOTOS-->
+
+         <!--INICIO ITEM GALERIA DE FOTOS -->
+         <a href="IMG/galeria/galeria4.jpg" class="box">
+            <img src="IMG/galeria/galeria4.jpg" alt="Galeria 2">
+            <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <!--FIM ITEM GALERIA DE FOTOS-->
+
+         <!--INICIO ITEM GALERIA DE FOTOS -->
+         <a href="IMG/galeria/galeria5.jpg" class="box">
+            <img src="IMG/galeria/galeria5.jpg" alt="Galeria 2">
+            <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <!--FIM ITEM GALERIA DE FOTOS-->
+
+         <!--INICIO ITEM GALERIA DE FOTOS -->
+         <a href="IMG/galeria/galeria6.jpg" class="box">
+            <img src="IMG/galeria/galeria6.jpg" alt="Galeria 2">
+            <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <!--FIM ITEM GALERIA DE FOTOS-->
+
+         <!--INICIO ITEM GALERIA DE FOTOS -->
+         <a href="IMG/galeria/galeria7.jpg" class="box">
+            <img src="IMG/galeria/galeria7.jpg" alt="Galeria 2">
+            <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <!--FIM ITEM GALERIA DE FOTOS-->
+
+         <!--INICIO ITEM GALERIA DE FOTOS -->
+         <a href="IMG/galeria/galeria8.jpg" class="box">
+            <img src="IMG/galeria/galeria8.jpg" alt="Galeria 2">
+            <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <!--FIM ITEM GALERIA DE FOTOS-->
+
+         <!--INICIO ITEM GALERIA DE FOTOS -->
+         <a href="IMG/galeria/galeria9.jpg" class="box">
+            <img src="IMG/galeria/galeria9.jpg" alt="Galeria 2">
+            <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <!--FIM ITEM GALERIA DE FOTOS-->
+    
+        <!-- Adicione mais imagens seguindo o mesmo padrão -->
+    </section>
+
+    <!--FIM GALERIA DE FOTOS - LUCAS NOLACIO-->
+
+
+    <!--------------------------------------------------->
+
+
+    <!--------------------------------------------------->
+
+
+    
+    <!--INICIO RODAP DO SITE LUCAS NOLACIO-->
+      <section class="rodape">
+        <div class="box-container">
+            
+    <!--INCIO DO INTEM DO RODAP-->
+
+            <div class="box">
+                <h3>LnPizza</h3>
+                <p>Estou dentro da comunidade LnPizaria</p>
+                <div class="redes-sociais">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+    <!--FIM DO ITEM DO RODAP-->
+
+    <!--INCIO DO INTEM DO RODAP-->
+
+    <div class="box">
+        <h3>Faça Seu Pedido</h3>
+        <p>69 992614173</p>
+        <p>(69)99261-4173</p>
+        <a href="mailto:lucasaoff84@gmail.com" title="lucasaoff84@gmail.com" class="link">Lucasaoff84@gmail.com</a>
+    </div>
+
+<!--FIM DO ITEM DO RODAP-->
+
+<!--INCIO DO INTEM DO RODAP-->
+
+<div class="local">
+    <h3>Localização</h3>
+    <p>
+        Rua Suamuma n: 1801 <br>
+
+       Vale do Pariso - Ro <br>
+
+       Setor 04
+    </p>
+
+</div>
+
+<!--FIM DO ITEM DO RODAP-->
+    
+        </div>
+        <div class="direitos">
+            Criado por <span>Lucas Nolacio</span> Todos os Direitos Reservados
+        </div>
+      </section>
+    
+    <!--INCIO RODAP DO SITE LUCAS NOLACIO-->
+
+   
+
+    <!----------------------------------------------------------------------->
+    
+     <!--JAVASCRIPT-->
+
+    <!--INICIO JS GALERIA DO SITE MAYKONSILVEIRA.COM.BR-->
+   
+
+        <!--INICIO JS GALERIA DO SITE MAYKONSILVEIRA.COM.BR-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+        <!--INCIO JS LUCAS NOLACIO-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="JS/--delivery.js"></script>
+    
+    <script src="JS/--delivery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        lightGallery(document.getElementById('galeria'));
+    });
+
+    </script>
+    
+    
+    
+</body>
+</html>

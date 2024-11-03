@@ -1,0 +1,638 @@
+/*RESPONSIVO CSS - LUCAS NOLACIO */
+
+
+section{
+    padding: 3rem 7%;
+
+
+}
+
+/*Destaque*/
+
+.destaque .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+
+}
+
+.destaque .box-container .box{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: red;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+
+.destaque .box-container .box .msimg {
+    width: 100%;
+
+}
+
+.destaque .box-container .box .msimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destaque .box-container .box .content{
+    padding: 2rem;
+
+}
+
+.destaque .box-container .box h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+
+/*RESPONSIVO COMO FUNCIONA*/
+
+.titulo {
+    font-size: 2.8rem;
+    color: #130f40;
+    padding: 1.2rem;
+    text-align: center;
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.titulo span {
+    color: red;
+}
+
+.como-funciona .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.como-funciona .box-container .box{
+    flex:  1 1 25rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.como-funciona .box-container .box img{
+    width: 170px;
+    border:  1rem solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.como-funciona .box-container .box h3{
+    font-size: 2.1rem;
+    padding: 1rem;
+}
+
+
+
+/*LOJA DO LUCAS NOLACIO*/
+
+.loja .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    
+}
+
+.loja .box-container .box{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 2.5rem;
+}
+
+.loja .box-container .box .img{
+    height: 29rem;
+    
+}
+
+.loja .box-container .box:hover img{
+    transform: scale(1.1);
+    transition: .4s linear;
+}
+
+
+.loja .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8rem;
+    color: #130f40;
+}
+
+.loja .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding: 1rem;
+    
+}
+
+.loja .box-container .box .estrelas {
+    padding: 1rem 0;
+}
+
+.loja .box-container .box .estrelas i{
+    font-size: 1.7rem;
+    color: gold;
+}
+
+.loja .box-container .box .loja-valor{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-right: 1rem;
+    color: #130f40;
+
+}
+
+
+.loja .box-container .box .loja-valor span{
+    color: red;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+
+/*EMPRESA - LnPizza*/
+
+
+.empresa{
+    background-color: red;
+}
+
+.empresa .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    background: red;
+    align-items: center;
+
+}
+
+.empresa .row .empresa-img{
+    flex: 1 1 32rem;
+
+}
+
+.empresa .row .empresa-img img{
+    width: 100%;
+    box-shadow: 0 5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.empresa .row .content{
+    flex: 1 1 50rem;
+}
+
+.empresa .row .content h3{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.empresa .row .content span{
+    color: yellow;
+}
+
+.empresa .row .content p{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 2;
+}
+
+.empresa .btn {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.empresa .btn:hover{
+    background-color: #fffb00;
+    color: #130f40;
+    border: 1px solid #130f40;
+}
+
+
+
+/*BLOG*/
+
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+
+}
+
+.blogs .box-container .box{
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+
+}
+
+.blogs .box-container .box img{
+    width: 100%;
+    height: 25rem;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.blogs .box-container .box .icons{
+    display: inline-block;
+    top: -2rem;
+    width: 100%;
+    background: red;
+    padding: 1rem;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.blogs .box-container .box .icons a{
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+
+}
+
+.blogs .box-container .box .icons a:hover{
+    color: gold;
+    text-shadow: 0 0 1rem #130f40;
+}
+
+.blogs .box-container .box a i{
+    color: #130f40;
+    padding-right: .5rem;
+}
+
+.blogs .box-container .box h3{
+    font-size: 2rem;
+    color: #130f40;
+}
+
+.blogs .box-container .box p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #777;
+    line-height: 2;
+}
+
+.blogs .box-container .box:hover{
+    transform: scale(1.1);
+    transition: .4s linear;
+}
+
+
+/*RODAPE*/
+
+.rodape{
+    background: red;
+    text-align: center;
+
+}
+
+.rodape .box-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.rodape .box-container .box .redes-sociais{
+    margin-top: 1rem;
+}
+
+.rodape .box-container .box h3{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.rodape .box-container .local h3{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 2rem 0;
+} 
+
+.rodape .box-container .box p{
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+
+.rodape .box-container .local p{
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 2.5rem;
+    padding: 1rem 0;
+}
+
+.rodape .box-container .box .redes-sociais a{
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: 10%;
+    width: 4.5rem;
+    height: 4.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-right: .3rem;
+}
+
+.rodape .box-container .box .redes-sociais a:hover{
+    background: #fffb00;
+    color: #130f40;
+    border: .1rem solid #130f40;
+    
+}
+
+
+.rodape .box-container .local{
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+  
+
+.rodape .box-container .box .link{
+    display: block;
+    font-size: 1.7rem;
+    line-height: 2;
+    padding: .5rem 0;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.rodape .box-container .box .link:hover{
+    color: gold;
+}
+
+.direitos{
+    text-align: center;
+    color: #fff;
+    margin-top:3rem ;
+    padding-top: 3rem;
+    text-transform: capitalize;
+    font-size: 2rem;
+    border-top: .1rem solid #fff;
+}
+
+.direitos span{
+    color: #fffb00;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+/*INICIO DO TOPO PAGINAS*/
+
+
+.topo-pagina{
+    background: url(IMG/topo-paginas-bg.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+
+}
+
+
+.topo-pagina h1{
+    color: #fff;
+    font-size: 4rem;
+}
+
+.topo-pagina p{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.topo-pagina a{
+    color: red;
+    padding-right: .5rem;
+}
+
+/*.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}*/
+
+.galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.galeria-fotos .box{
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+/*.galeria-fotos .box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    overflow: hidden;
+}*/
+
+.galeria-fotos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+   
+}
+
+.galeria-fotos img:hover {
+    transform: scale(1.1);
+    
+    
+}
+
+.icon  {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: none;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 100%;
+    padding-top:11rem ;
+}
+    
+
+
+
+   
+
+
+.icon i{
+    
+    display: block;
+    width: 100%;
+    text-align: center;
+    
+}
+
+    
+
+.box:hover .icon {
+    display: block;
+}
+
+
+/*MENU DE COMPRAS....*/
+
+
+.menu .slider .titulo {
+    padding: 1rem;
+    font-size: 3rem;
+    color: #fff;
+    background-color: red;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+.menu .slider .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+
+.menu .slider .box-container .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 38rem;
+    gap: 1rem;
+    background-color: #eeeeeeee;
+    padding: 2rem;
+    box-shadow: 0 .5rem rgba(0, 0, 0, 0.1);
+    
+}
+
+.menu .slider .box-container .box:hover{
+    transform: scale(.9);
+    cursor: pointer;
+}
+
+
+.menu .slider .box-container .box h3{
+    font-size: 2.2rem;
+    color: #130f40;
+    padding-bottom: .5rem;
+
+}
+
+
+.menu .slider .box-container .box p{
+    font-size:1.4rem ;
+    color: #777;
+    line-height: 2;
+}
+
+
+.menu .slider .box-container .box .valor{
+    font-size:2.2rem ;
+    color: red;
+}
+
+/*JANELA MODAL*/
+
+.menu-modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+}
+
+
+.menu-modal-container .menu-modal{
+    background-color: #fff;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    width: 35rem;
+    
+}
+
+.menu-modal-container .menu-modal.active{
+    display: inline-block;
+}
+
+.menu-modal-container .menu-modal h3{
+    color: #130f40;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+
+.menu-modal-container .menu-modal .estrelinha {
+    margin-top: .5rem;
+    
+}
+
+.menu-modal-container .menu-modal .estrelinha i{
+    color: red;
+    font-size: 1.7rem;
+}
+
+.menu-modal-container .menu-modal p{
+    font-size: 1.5rem;
+    color: #777;
+    line-height: 2;
+    padding: 1rem 0;
+
+}
+
+.menu-modal-container .menu-modal .valor{
+    font-size: 2.5rem;
+    color: #130f40;
+    margin-bottom: .5rem;
+
+}
+
+#fecha{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#fecha:hover{
+    transform: rotate(110deg);
+    color: red;
+}
+
+

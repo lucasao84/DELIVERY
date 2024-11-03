@@ -1,0 +1,52 @@
+  <!--INCIO CARRINHO DE COMPRAS-->
+            <div class="carrinho">
+                <!--INCIO DO ITEM -->
+                <i class="fas fa-times"></i>
+                <img src="IMG/carrinho/carrinho-1.png" alt="">
+                <div class="content">
+                    <h3>Pizza Frango</h3>
+                    <span class="quantidade">1</span>
+                    <span class="multiplica">x</span>
+                    <span class="valor">R$ 77,77</span>
+                </div>
+                <!--FIM DO ITEM-->
+            </div>
+        <!--FIM CARRINHO DE COMPRAS-->
+
+ <!--INCIO CARRINHO DE COMPRAS-->
+        <div class="carrinho">
+            <!--INCIO DO ITEM -->
+            <i class="fas fa-times"></i>
+            <img src="IMG/carrinho/carrinho-2.png" alt="">
+            <div class="content">
+                <h3>Pizza Frango</h3>
+                <span class="quantidade">1</span>
+                <span class="multiplica">x</span>
+                <span class="valor">R$ 77,77</span>
+            </div>
+            <!--FIM DO ITEM-->
+        </div>
+    <!--FIM CARRINHO DE COMPRAS-->
+
+
+    <!--INCIO CARRINHO DE COMPRAS-->
+    <div class="carrinho">
+        <!--INCIO DO ITEM -->
+        <i class="fas fa-times"></i>
+        <img src="IMG/carrinho/carrinho-3.png" alt="">
+        <div class="content">
+            <h3>Pizza Frango</h3>
+            <span class="quantidade">1</span>
+            <span class="multiplica">x</span>
+            <span class="valor">R$ 77,77</span>
+        </div>
+        <!--FIM DO ITEM-->
+    </div>
+    <!--FIM CARRINHO DE COMPRAS-->
+
+    <h3 class="total">Total: R$ 777,77</h3>
+    <a href="" class="btn">Ir para o carrinho</a>
+     </header>
+
+
+    <!--FIM INCIO DO CABEÇALHO DO SITE LUCAS NOLACIO-->
