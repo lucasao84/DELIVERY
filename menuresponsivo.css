@@ -1,0 +1,30 @@
+.menu-responsivo{
+    width: 30rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow:0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 115%;
+   right: -105%; 
+    padding: 1.5rem;
+    
+    transition: right 0.2s linear;
+
+}
+
+
+.menu-responsivo a{
+    display: block;
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    color: #130f40;
+}
+
+.menu-responsivo a:hover{
+    color: red;
+}
+
+.menu-responsivo.active{
+    right: 1.5rem;
+    transition: .2s linear;  
+  }

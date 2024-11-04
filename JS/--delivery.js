@@ -1,17 +1,23 @@
 let carrinho = document.querySelector(".carrinho");
 
 document.querySelector("#cart").onclick = () => {
+    let menuresponsivo = document.querySelector(".menu-responsivo")
     carrinho.classList.toggle('active');
 
     formulario.classList.remove('active')
+
+    menuresponsivo.classList.remove('active');
 }
 
 let formulario = document.querySelector(".login-form");
 
 document.querySelector("#login").onclick = () => {
+    let menuresponsivo = document.querySelector(".menu-responsivo")
     formulario.classList.toggle('active')
 
     carrinho.classList.remove('active');
+
+    menuresponsivo.classList.remove('active');
 }
 
 
@@ -31,12 +37,29 @@ var swiper = new Swiper(".home-slider", {
     },
 });
 
+//menu responsivo //
+
+let menuresponsivo = document.querySelector(".menu-responsivo");
+document.querySelector("#menu").onclick = () => {
+    let carrinho = document.querySelector(".carrinho");
+    let formulario = document.querySelector(".login-form");
+
+    menuresponsivo.classList.toggle('active');
+    carrinho.classList.remove('active');
+    formulario.classList.remove('active');
+   
+
+}
+
 
 
 
 window.onscroll = () => {
+    let menuresponsivo = document.querySelector(".menu-responsivo")
     carrinho.classList.remove('active')
     formulario.classList.remove('active')
+    formulario.classList.remove('active')
+    menuresponsivo.classList.remove('active');
 
 }
 

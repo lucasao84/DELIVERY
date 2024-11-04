@@ -15,25 +15,31 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="menuresponsivo.css">
     <style>
-  @media(max-width: 667px) {
+  @media(max-width: 768px) {
     .top-do-site .icons #menu {
         display: inline-block;
         
     }
 
     .top-do-site .menu-site {
-    
+        top: 100%;
+        width: 30rem;
         position: absolute;
-        right: -100%;
+        right: 100%;
         transition: right 0.2s linear;
+        background-color: aliceblue;
+        
     }
 
     .top-do-site .menu-site.active {
         right: 2rem;
+        transition: .4s;
     }
 
     .top-do-site .menu-site a {
+        display: block;
         font-size: 2rem;
         margin: 2rem 2.5rem;
         
@@ -110,13 +116,37 @@
             <a href="BLOG.html">BLOG</a> 
             <a href="CONTATOS.html">FALE CONOSCO</a> 
         </nav>
+
+
+        <!------------------------------------------------->
+         <!--menu responsivo-->
+
+         <nav class="menu-responsivo" id="meu-menu" style="text-shadow: 0 0 1rem #130f40;">
+            <a href="index.html">INICIO</a>
+           
+            <a href="EMPRESA.html">EMPRESA</a>
+            
+            <a href="MENU.html">CARDAPIO</a>
+            
+            <a href="pedido.html">MONTAR PEDIDO</a>
+            
+            <a href="BLOG.html">BLOG</a> 
+            
+            <a href="CONTATOS.html">FALE CONOSCO</a> 
+            
+        </nav>
+
+        <!------------------------------------------------->
+
+
+
         <!--INICIO DO MENU DO SITE-->
 
         <!--INCIO DOS INCONES-->        
             <div class="icons"  style="    text-shadow: 0 0 1rem #130f40;">
             <div id="cart" class="fa fa-shopping-cart"></div>
             <div id="login" class="fa fa-user"></div>
-            <div id="menu" class="fa fa-bars"></div>
+            <div id="menu" class="fa fa-bars" onclick="abrirMenu()"></div>
             </div>
             
     
